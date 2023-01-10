@@ -24,7 +24,7 @@ ENV PATH $PATH:$KARAF_HOME/bin
 ENV KARAF_OPTS "-Dunomi.autoStart=true"
 WORKDIR $KARAF_HOME
 
-RUN wget http://apache.mirrors.pair.com/incubator/unomi/1.3.0-incubating/unomi-1.3.0-incubating-bin.tar.gz
+RUN wget https://archive.apache.org/dist//incubator/unomi/1.3.0-incubating/unomi-1.3.0-incubating-bin.tar.gz
 RUN tar -xzf unomi-1.3.0-incubating-bin.tar.gz
 RUN mv unomi-1.3.0-incubating/* .
 RUN rm unomi-1.3.0-incubating-bin.tar.gz
